@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Dashboard || CodeAlpha</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- bootstrap css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="grid-container">
+        <!-- header -->
+            <header class="header">
+                <div class="menu-icon" onclick="openSidebar()">
+                    <span class="material-symbols-outlined">menu</span>
+                </div>
+                <div class="header-left">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+                <div class="header-right">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="material-symbols-outlined">mail</span>
+                    <a href="login.html" style="color: #C9D6DF ;"><span class="material-symbols-outlined">account_circle</span></a>
+                </div>
+            </header>
+        <!-- end header -->
+        <!-- sidebar -->
+            <aside id="sidebar" class="sidebar">
+                <div class="sidebar-title">
+                    <div class="sidebar-brand">
+                        <span class="material-symbols-outlined"> mood </span> LOGO
+                    </div>
+                    <span class="material-symbols-outlined" onclick="closeSidebar()"> close </span>
+                </div>
+                <ul class="sidebar-list">
+                    <li class="sidebar-list-item">
+                      <a href="#">
+                        <span class="material-symbols-outlined"> dashboard </span> Dashboard
+                      </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                      <a href="#">
+                        <span class="material-symbols-outlined"> leaderboard </span> Leaderboard
+                      </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                      <a href="#">
+                        <span class="material-symbols-outlined"> forum </span> Forum
+                      </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                      <a href="#">
+                        <span class="material-symbols-outlined"> call </span> Support
+                      </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                      <a href="#">
+                        <span class="material-symbols-outlined"> mail </span> Messages
+                      </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                      <a href="#">
+                        <span class="material-symbols-outlined"> toll </span> Reports
+                      </a>
+                    </li>
+                    <li class="sidebar-list-item">
+                      <a href="#">
+                        <span class="material-symbols-outlined"> settings </span> Settings
+                      </a>
+                    </li>
+                  </ul>
+            </aside>
+        <!-- end sidebar -->
+        <!-- main -->
+            <main class="main-container">
+                <div class="main-title">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="main-cards">
+                    <div class="card">
+                        <div class="card-inner">
+                            <h2>Likes</h2>
+                            <span class="material-symbols-outlined"> favorite </span>
+                        </div>
+                        <h4>4,000</h4>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <h2>Subscribers</h2>
+                            <span class="material-symbols-outlined"> sound_sampler </span>
+                        </div>
+                        <h4>8,934</h4>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <h2>Followers</h2>
+                            <span class="material-symbols-outlined"> groups </span>
+                        </div>
+                        <h4>2,030</h4>
+                    </div>
+                    <div class="card">
+                        <div class="card-inner">
+                            <h2>Messages</h2>
+                            <span class="material-symbols-outlined"> forum </span>
+                        </div>
+                        <h4>1,234</h4>
+                    </div>
+                </div>
+                <!-- products section -->
+                <div class="products">
+                    <div class="product-card">
+                        <h2 class="product-description">
+                            <p class="text-secondary-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, sapiente? Quo fugit obcaecati voluptas suscipit culpa quas perferendis ratione, quisquam magnam eaque optio fuga id quasi odit ducimus placeat voluptate.</p>
+                            <button type="button" class="product-button"><span class="material-symbols-outlined"> add</span></button> 
+                        </h2>
+                    </div>
+                    <div class="product">
+
+                        <div class="product-div">
+                          <div class="product-icon">
+                            <i class="bi bi-twitter"></i>
+                          </div>
+                          <h1 class="text">+274</h1>
+                          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="product-div">
+                          <div class="product-icon">
+                            <i class="bi bi-instagram"></i>
+                          </div>
+                          <h1 class="text">+197</h1>
+                          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="product-div">
+                          <div class="product-icon">
+                            <i class="bi bi-youtube"></i>
+                          </div>
+                          <h1 class="text">+310</h1>
+                          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="product-div">
+                          <div class="product-icon">
+                            <i class="bi bi-facebook"></i>
+                          </div>
+                          <h1 class="text">+150</h1>
+                          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                </div>
+            </main>
+        <!-- end main -->
+    </div>
+    
+    <!-- JS link -->
+    <script src="index.js"></script>
+    <!-- bootstrap JS link -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  -->
+</body>
+</html>

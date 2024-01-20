@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="login-page">
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form action="#">
+                <div class="input-group">
+                    <div class="input-field" id="name">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="material-symbols-outlined">mail</span>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" placeholder="Password" id="passwordInput" required>
+                        <span class="eye" onclick="passwordToggle()">
+                            <span class="material-symbols-outlined" id="hide1" >visibility</span>
+                            <span class="material-symbols-outlined" id="hide2">visibility_off</span>
+                        </span>
+                        
+                    </div>
+                    <p>Forgot Password <a href="#">Click Here!</a></p>
+                    <p id="signIn">Already Registered? <a id="signInBtn" href="#" >Sign In</a></p>
+                    <p id="signUp" class="disable">New User? <a href="#" id="signUpBtn">Sign Up</a></p>
+                    
+                </div>
+                <div class="btn-field">
+                    <a href="index.html"><button type="button" id="signUpSubmit">Sign Up</button></a>
+                    <a href="index.html"><button type="button" class="disable" id="signInSubmit">Sign In</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+           
+<script src="index.js"></script> 
+</body>
+</html>
